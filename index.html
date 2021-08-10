@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>Salva Tierra</title>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="styles/layout.css" type="text/css">
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <div class="wrapper row1">
+        <header id="header" class="clear">
+            <div id="hgroup">
+                <img src="images/logo.jpeg" class="logo" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#acerca">Acerca de nosotros</a></li>
+                    <li><a href="#resena">Reseña</a></li>
+                    <li><a href="#contacto">Contactenos </a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <!-- content -->
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="images/imag1.jpeg" style="width:100%">
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/imag2.jpeg" style="width:100%">
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/imag3.jpeg" style="width:100%">
+            <div class="text"></div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <div id="container" class="clear">
+        <!-- Slider -->
+        <section id="slider" class="clear">
+            <figure><img src="images/imag1.jpeg" alt="">
+                <figcaption>
+                    <h2></h2>
+                    <p></p>
+                    <footer class="more"><a href="#">Read More &raquo;</a></footer>
+                </figcaption>
+            </figure>
+        </section>
+        <!-- main content -->
+        <div id="intro">
+            <section class="clear">
+                <!-- article 1 -->
+                <article class="two_quarter">
+                    <h2></h2>
+                    <p></p>
+                    <p></p>
+                </article>
+                <!-- article 2 -->
+                <article class="two_quarter lastbox">
+                    <figure>
+                        <ul class="clear">
+                            <li><a href="#"><img src="images/demo/130x130.gif" width="130" height="130" alt=""></a>
+                            </li>
+                            <li><a href="#"><img src="images/demo/130x130.gif" width="130" height="130" alt=""></a>
+                            </li>
+                            <li class="last"><a href="#"><img src="images/demo/130x130.gif" width="130" height="130"
+                                        alt=""></a></li>
+                        </ul>
+                        <figcaption><a href="#"> &raquo;</a></figcaption>
+                    </figure>
+                </article>
+            </section>
+        </div>
+        <!-- ########################################################################################## -->
+        <!-- ########################################################################################## -->
+        <!-- ########################################################################################## -->
+        <!-- ########################################################################################## -->
+        <div id="homepage" class="last clear">
+            <section class="one_quarter">
+                <h2 class="title">From The Blog</h2>
+                <article>
+                    <header>
+                        <h2>Post Title</h2>
+                        <address>
+                            <a href="#"></a>
+                        </address>
+                        <time datetime="--">, 6<sup>th</sup> </time>
+                    </header>
+                    <p></p>
+                    <footer class="more"><a href="#"> &raquo;</a></footer>
+                </article>
+            </section>
+            <section class="one_quarter">
+                <h2 class="title"></h2>
+                <nav>
+                    <ul>
+                        <li><a href="#"></a></li>
+                        <li><a href="#">r</a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li class="last"><a href="#"></a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="two_quarter lastbox">
+                <h2 class="title">Acerca de nosotros</h2>
+                <img class="imgl" src="images/demo/130x130.gif" width="130" height="130" alt="">
+                <p>Mision:Asesorar a nuestros clientes de la mejor manera brindando servicios oportunos para que logren
+                    alcanzar un mayor rendimiento en los propósitos de su finca con opciones y alternativas modernas</p>
+                <footer class="more"><a href="#"> &raquo;</a></footer>
+            </section>
+        </div>
+        <!-- / content body -->
+    </div>
+    </div>
+    <!-- Footer -->
+    <div class="wrapper row3">
+        <footer id="footer" class="clear">
+            <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Domain Name</a></p>
+            <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/"
+                    title="Free Website Templates">OS Templates</a></p>
+        </footer>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+</body>
+
+</html>
