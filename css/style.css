@@ -1648,8 +1648,8 @@ nav.main-menu {
 .contact {
     padding-bottom: 90px;
     background-size: cover;
-    
-    
+
+
     background-size: cover;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -1918,4 +1918,32 @@ ul.loca li a {
     background-color: #428713;
     border: #428713 solid 1px;
     color: #fff;
+}
+
+#vacas {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#vacas td,
+#vacas th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#vacas tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#vacas tr:hover {
+    background-color: #ddd;
+}
+
+#vacas th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
 }
